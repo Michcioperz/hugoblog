@@ -4,6 +4,15 @@ theme = ["zen"]
 enableRobotsTxt = true
 defaultContentLanguage = "en"
 
+[params]
+  dateFormat = "2006-01-02"
+  logo = false
+  jquery = false
+  poweredby = true
+  feedlinks = true
+  submitted = true
+  contact = "public+blog@meekchopp.es"
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -17,7 +26,3 @@ defaultContentLanguage = "en"
 [permalinks]
   post = "/:filename/"
 
-[params]
-  dateFormat = "2006-01-02"
-  logo = false
-  jquery = false
