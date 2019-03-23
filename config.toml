@@ -19,5 +19,5 @@ defaultContentLanguage = "en"
 
 [params]
   dateFormat = "2006-01-02"
-  logo = "false"
-  jquery = "false"
+  logo = false
+  jquery = false
