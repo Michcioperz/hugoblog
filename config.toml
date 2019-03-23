@@ -1,0 +1,23 @@
+baseURL = "https://meekchopp.es"
+title = "Michcioperz"
+theme = ["zen"]
+enableRobotsTxt = true
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    [languages.en.params]
+      baseURL = "https://michcioperz.com"
+  [languages.pl]
+    languageName = "polski"
+    [languages.pl.params]
+      baseURL = "https://ijestfajnie.pl"
+
+[permalinks]
+  post = "/:filename/"
+
+[params]
+  dateFormat = "2006-01-02"
+  logo = "false"
+  jquery = "false"
