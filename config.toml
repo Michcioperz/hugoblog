@@ -1,4 +1,3 @@
-baseURL = "https://meekchopp.es"
 title = "Michcioperz"
 theme = ["zen"]
 enableRobotsTxt = true
