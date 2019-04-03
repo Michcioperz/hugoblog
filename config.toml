@@ -1,7 +1,6 @@
 title = "Michcioperz"
 theme = ["zen"]
 enableRobotsTxt = true
-defaultContentLanguage = "en"
 
 [params]
   dateFormat = "2006-01-02"
@@ -15,12 +14,12 @@ defaultContentLanguage = "en"
 [languages]
   [languages.en]
     languageName = "English"
-    [languages.en.params]
-      baseURL = "https://michcioperz.com"
+    baseURL = "https://michcioperz.com"
+    weight = 1
   [languages.pl]
     languageName = "polski"
-    [languages.pl.params]
-      baseURL = "https://ijestfajnie.pl"
+    baseURL = "https://ijestfajnie.pl"
+    weight = 2
 
 [permalinks]
   post = "/:filename/"
