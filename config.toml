@@ -14,11 +14,11 @@ enableRobotsTxt = true
 [languages]
   [languages.en]
     languageName = "English"
-    baseURL = "https://michcioperz.com"
+    baseURL = "http://michcioperz.com"
     weight = 1
   [languages.pl]
     languageName = "polski"
-    baseURL = "https://ijestfajnie.pl"
+    baseURL = "http://ijestfajnie.pl"
     weight = 2
 
 [permalinks]
