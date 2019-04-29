@@ -21,6 +21,3 @@ enableRobotsTxt = true
     baseURL = "https://ijestfajnie.pl"
     weight = 2
 
-[permalinks]
-  post = "/:filename/"
-
