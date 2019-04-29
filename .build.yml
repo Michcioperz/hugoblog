@@ -17,10 +17,10 @@ tasks:
   - deploy-pl: |
       cp ~/.pl-neocities-secret ~/.config/neocities/config
       cd hugoblog/public/pl
-      neocities push .
+      $(ruby -e 'puts Gem.user_dir')/bin/neocities push .
   - deploy-en: |
       cp ~/.en-neocities-secret ~/.config/neocities/config
       cd hugoblog/public/en
-      neocities push .
+      $(ruby -e 'puts Gem.user_dir')/bin/neocities push .
 
 
