@@ -8,6 +8,6 @@ menu = "nav"
 
 Less preferred:
 
- - fediverse (Mastodon, Pleroma, …): [@314@m.atm.pl](https://m.atm.pl/users/314)
+ - fediverse (Mastodon, Pleroma, …): `@314@kawen.space`
  - discord: `Michcioperz#2658`
  - telegram: [@michcioperz](https://t.me/michcioperz)
