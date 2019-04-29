@@ -1,0 +1,26 @@
+image: archlinux
+packages:
+  - ruby
+  - hugo
+secrets:
+  - c60b4fff-4f17-4550-ac14-8e7e374c35ea
+  - f1716354-8bd2-4a20-ac6e-e98b93fce122
+sources:
+  - https://git.sr.ht/~michcioperz/hugoblog
+tasks:
+  - deps: |
+      gem install neocities
+      mkdir ~/.config/neocities -p
+  - build: |
+      cd hugoblog
+      hugo
+  - deploy-pl: |
+      cp ~/.pl-neocities-secret ~/.config/neocities/config
+      cd hugoblog/public/pl
+      neocities push .
+  - deploy-en: |
+      cp ~/.en-neocities-secret ~/.config/neocities/config
+      cd hugoblog/public/en
+      neocities push .
+
+
