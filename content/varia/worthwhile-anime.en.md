@@ -1,5 +1,6 @@
 +++
 title = "Worthwhile anime"
+url = "/worthwhile-anime/"
 +++
 
 Dynamic anime lists like MyAnimeList and Kitsu are good for storing progress in
