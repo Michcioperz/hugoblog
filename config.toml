@@ -6,9 +6,11 @@ enableRobotsTxt = true
   dateFormat = "2006-01-02"
   logo = false
   jquery = false
+  mainSections = ['post']
   poweredby = true
   feedlinks = true
   submitted = true
+  sidebar = false
   contact = "public+blog@meekchopp.es"
 
 [languages]

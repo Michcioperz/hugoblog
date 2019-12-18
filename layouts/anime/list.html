@@ -1,0 +1,31 @@
+{{ define "main" -}}
+<main class="main layout__main">
+<h1 class="title">{{ .Title }}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Genres</th>
+      <th>Safe for work?</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range .Pages -}}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Params.englishtitle }} ({{.Params.englishtitle }}){{ end }}</a></td>
+      <td>{{ $firstGenre := true }}{{ range .Params.genres }}{{ if not $firstGenre }}, {{ end }}{{ $firstGenre = false }}{{ . }}{{ end }}</td>
+      <td>{{ if .Params.safeforwork }}yes{{ else }}no{{ end }}</td>
+    </tr>
+    {{ end -}}
+  </tbody>
+</table>
+
+{{ $paginator := .Paginate (.Pages) -}}
+{{ range $paginator.Pages -}}
+{{ .Render "summary"}}
+{{ end -}}
+
+{{ partial "pagination.html" . }}
+</main>
+{{ end }}
