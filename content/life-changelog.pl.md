@@ -6,7 +6,7 @@ menu = "nav"
 #### Co robię
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
-  - szacowany czas ukończenia licencjatu: 2020
+  - szacowany czas ukończenia licencjatu: 2020, jednak w planach mam magisterkę do 2022
 - pracuję jako administrator dla **Fundacji Rozwoju Informatyki**
   - utrzymuję system sprawdzający polskiej [Olimpiady Informatycznej](https://oi.edu.pl)
   - obsługuję problemy techniczne uczestników konkursów niezdalnych
