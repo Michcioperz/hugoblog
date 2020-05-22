@@ -56,7 +56,9 @@ Z drugiej strony mam taką obserwację z instancji, na których byłem — jako 
 ### Możesz samemu ustalić reguły swojej instancji (i nie musisz się ze wszystkimi zgadzać, a oni z tobą)
 
 Możesz założyć instancję, na której nie ma zasad (jeżeli mieszkasz w kraju, w którym nie zostanie ci za to odebrany serwer lub adres IP).
+
 Możesz założyć instancję, na której nie wolno przeklinać.
+
 Możesz założyć [instancję, na której nie wolno używać litery E](https://oulipo.social) albo [taką, na której można używać tylko litery E](https://dolphin.town).
 
 Musisz jednak mieć na uwadze, że z jednej strony ludzie patrzą na twoje reguły i na tej podstawie decydują, czy się z tobą kolegować, a z drugiej strony są ludzie, którzy nie będą patrzeć na twoje reguły, tylko powysyłają ci obraźliwe komentarze, aż ich zablokujesz (lub zaakceptujesz).
