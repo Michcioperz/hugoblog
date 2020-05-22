@@ -73,6 +73,8 @@ Niestety czasami (nie często, bo fedi jest nadal za mało popularne) zdarzają 
 
 Wyszukiwanie czasem się przydaje, jednak przez osoby rozwijające Mastodona jest uważane za groźne, bo ułatwia nękanie. Zresztą nawet gdyby nie było ograniczone, to możesz przeszukiwać tylko bazę wpisów na tej konkretnej instancji – sieć jest rozproszona, więc ze sporym prawdopodobieństwem wiele wpisów nigdy do ciebie nie dotrze.
 
+Ale innym też będzie trudno szukać wpisów o tobie. Szczególnie, jeśli będą prywatne, bo wiadomo, że publiczne zindeksuje jakoś Google.
+
 To jest coś co trudno jasno określić jako dobre lub złe. Ale da się z tym żyć.
 
 ## Nie odstraszyłeś mnie, gdzie mam podpisać?
