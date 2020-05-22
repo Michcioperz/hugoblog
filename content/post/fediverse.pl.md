@@ -88,5 +88,8 @@ Poza tym dobrze czułem się na Pleromie na <https://kawen.space>. Dobrych znajo
 A może chcesz samemu spróbować sił jako administrator? Darius Kazemi napisał bardzo fajny poradnik, przede wszystkim o aspektach społecznych, nie technicznych: <https://runyourown.social/>.
 
 
+---
+
 Mam nadzieję, że spotkamy się na fedi
+
 [@michcio@om.nom.pl](https://om.nom.pl/michcio)
