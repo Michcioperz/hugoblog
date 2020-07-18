@@ -1,6 +1,7 @@
 +++
 title = "Life changelog"
-menu = "nav"
+  [menu.nav]
+  weight = 10
 +++
 
 #### Currently

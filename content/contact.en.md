@@ -1,6 +1,7 @@
 +++
 title = "Contact"
-menu = "nav"
+  [menu.nav]
+  weight = 20
 +++
 
  - email: <mailto:public+blog@meekchopp.es>

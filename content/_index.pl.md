@@ -1,7 +1,6 @@
 +++
-title = "Michał Sidor"
-menu = "nav"
-weight = 1
+title = "Strona główna"
+contentOnly = true
 +++
 
 Obserwujesz w tej chwili witrynę internetową Michała Sidora, znanego również jako Michcioperz.

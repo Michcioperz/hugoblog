@@ -1,6 +1,7 @@
 +++
 title = "Do tej pory"
-menu = "nav"
+  [menu.nav]
+  weight = 10
 +++
 
 #### Co robię

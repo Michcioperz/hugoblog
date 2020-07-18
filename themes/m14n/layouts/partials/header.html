@@ -1,0 +1,25 @@
+<header>
+  <a href="{{ relref . "/" }}">
+    <h1>
+      {{- .Site.Title -}}
+    </h1>
+  </a>
+  <nav>
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.nav -}}
+        {{ if $currentPage.IsMenuCurrent "nav" . -}}
+          <li class="active">
+            {{- .Name -}}
+          </li>
+        {{ else -}}
+          <li>
+            <a href="{{ .URL }}">
+              {{- .Name -}}
+            </a>
+          </li>
+        {{ end -}}
+      {{ end -}}
+    </ul>
+  </nav>
+</header>

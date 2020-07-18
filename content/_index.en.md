@@ -1,7 +1,6 @@
 +++
-title = "Michał Sidor"
-menu = "nav"
-weight = 1
+title = "Home"
+contentOnly = true
 +++
 
 You have arrived at the website of Michał Sidor, also known as Michcioperz.

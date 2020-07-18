@@ -1,0 +1,9 @@
+{{ define "main" -}}
+  <h2>{{ .Title }}</h2>
+  {{ .Content }}
+  {{ if not (default false .Params.contentOnly) -}}
+    {{ range .Pages -}}
+      {{ .Render "summary" -}}
+    {{ end -}}
+  {{ end -}}
+{{ end -}}

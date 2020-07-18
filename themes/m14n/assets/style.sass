@@ -1,0 +1,82 @@
+@font-face
+  font-family: 'Literata'
+  font-display: swap
+  src: local('Literata'), url({{ (resources.Get (path.Join "/fonts" "literata" "variable" "Literata-Roman-VF.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
+{{ range $weight, $weightInt := dict "light" 300 "regular" 400 "semibold" 500 "bold" 600 -}}
+@font-face
+  font-family: 'Overpass Mono'
+  font-display: swap
+  src: local('OverpassMono'), local('Overpass Mono') {{ range $ext, $format := dict ".woff2" "woff2" ".woff" "woff" ".ttf" "truetype" }}, url({{ (resources.Get (path.Join "/fonts" "overpass-mono" (printf "overpass-mono-%s%s" $weight $ext)) | resources.Fingerprint).RelPermalink }}) format("{{ $format }}"){{ end }}
+  font-weight: {{ $weightInt }}
+  font-style: normal
+{{ end -}}
+
+.container
+  width: 90%
+  max-width: 1000px
+  margin:
+    left: auto
+    right: auto
+
+\:root
+  color-scheme: light dark
+
+//$accent: #984447
+ $light: #add9f4
+ $dark: #101419
+
+$light: #ffffff
+$dark: #2d3142
+$light-accent: #98360b
+$dark-accent: #F7B497
+
+a:link, a:active, a:visited
+  display: inline-block
+  color: $light-accent
+  & > *
+    margin:
+      top: 0
+      bottom: 0
+
+body
+  overflow-y: scroll
+  background-color: $light
+  color: $dark
+  font-family: 'Literata'
+
+pre, code
+  font-family: 'Overpass Mono'
+
+header
+  text-align: center
+
+nav, footer, main, header h1, article
+  padding:
+    top: 0.5em
+    bottom: 0.5em
+
+nav, footer, main
+  border:
+    top: 0.2em dashed $light-accent
+
+nav
+  ul
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 0
+    li
+      flex: 1 1
+      display: inline
+
+@media (prefers-color-scheme: dark)
+  body
+    background-color: $dark
+    color: $light
+
+  a:link, a:active, a:visited
+    color: $dark-accent
+
+  nav, footer, main
+    border:
+      top: 0.2em dashed $dark-accent

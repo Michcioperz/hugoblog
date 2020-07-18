@@ -1,0 +1,12 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+{{ hugo.Generator }}
+<title>{{ if .Title }}{{ .Title }} – {{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ end }}" />
+<link rel="stylesheet" href="{{ (resources.Get "style.sass" | resources.ExecuteAsTemplate "style.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint).RelPermalink }}" />
+{{ range .AlternativeOutputFormats -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}" />
+{{ end -}}
+<!-- TODO: manifest -->
+<!-- TODO: favicon -->

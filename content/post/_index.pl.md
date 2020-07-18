@@ -1,5 +1,7 @@
 +++
 title = "Blog"
-menu = "nav"
+aliases = "/blog/"
+  [menu.nav]
+  weight = 30
 +++
 
