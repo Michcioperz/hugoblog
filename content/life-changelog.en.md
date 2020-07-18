@@ -7,13 +7,14 @@ title = "Life changelog"
 #### Currently
 
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)
-  - expected to graduate BSc in year 2020, but planning to stay for MSc until 2022
-- working as system administrator for **Foundation for Information Technology Development**
-  - maintaining the grading system of [Polish Olympiad in Informatics](https://oi.edu.pl)
-  - handling technical issues of participants during on-site competitions
+  - finished BSc as of July 2020, admitted for MSc programme
+- looking for a new job, please [contact me]({{< ref "./contact" >}}) if you have something interesting to offer
 
 #### Formerly
 
+- system administrator for **Foundation for Information Technology Development**
+  - maintained the grading system of [Polish Olympiad in Informatics](https://oi.edu.pl)
+  - handled technical issues of participants during on-site competitions
 - internship at Samsung R&D Poland, working on open source [SLAV device testing stack](https://github.com/SamsungSLAV)
   - July 2018 - February 2019
   - developped a lightweight_-ish_ container solution

@@ -7,13 +7,14 @@ title = "Do tej pory"
 #### Co robię
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
-  - szacowany czas ukończenia licencjatu: 2020, jednak w planach mam magisterkę do 2022
-- pracuję jako administrator dla **Fundacji Rozwoju Informatyki**
-  - utrzymuję system sprawdzający polskiej [Olimpiady Informatycznej](https://oi.edu.pl)
-  - obsługuję problemy techniczne uczestników konkursów niezdalnych
+  - uzyskałem tytuł licencjata w lipcu 2020, zostałem zakwalifikowany na studia magisterskie
+- szukam ciekawej pracy, posiadaczy ciekawych propozycji zachęcam do [kontaktu]({{< ref "./contact" >}})
 
 #### Co robiłem
 
+- pracowałem jako administrator dla **Fundacji Rozwoju Informatyki**
+  - utrzymywałem system sprawdzający polskiej [Olimpiady Informatycznej](https://oi.edu.pl)
+  - obsługiwałem problemy techniczne uczestników konkursów niezdalnych
 - pracowałem w Samsungu nad otwartoźródłowym [stosem do testowania urządzeń o wdzięcznej nazwie SLAV](https://github.com/SamsungSLAV)
   - od lipca 2018 do lutego 2019
   - zbudowałem proste rozwiązanie kontenerowe
