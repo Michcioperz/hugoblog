@@ -2,6 +2,13 @@ title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    lineNos = true
+
 [params]
   dateFormat = "2006-01-02"
   logo = false
