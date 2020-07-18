@@ -12,7 +12,7 @@ Imagine an empty CSS file at `/.well-unknown/cryptolocker` with HSTS and `immuta
 
 I ~~have~~ had a version of it running at ~~harbringer.meekchopp.es~~ if you're interested, and here's the nginx config it took to build.
 
-```
+```nginx
 server {
         server_name harbringer.meekchopp.es;
         listen 80;
