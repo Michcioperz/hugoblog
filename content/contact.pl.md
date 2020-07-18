@@ -8,6 +8,6 @@ menu = "nav"
 
 Mniej preferowane:
 
- - fediwersum (Mastodon, Pleroma, …): <https://om.nom.pl/michcio>
+ - twitter: [@Michcioperz](https://twitter.com/Michcioperz)
  - discord: `Michcioperz#2658`
  - telegram: [@michcioperz](https://t.me/michcioperz)
