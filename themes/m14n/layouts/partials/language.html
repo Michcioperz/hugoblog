@@ -1,0 +1,10 @@
+{{ if .IsTranslated }}
+<p>
+  {{ i18n "Other available languages for this page:" }}
+  {{ range .Translations -}}
+  <a href="{{ .Permalink }}">
+    {{- .Language.LanguageName }}{{ " " -}}
+  </a>
+  {{ end -}}
+</p>
+{{ end -}}
