@@ -1,4 +1,7 @@
 {{ define "main" -}}
-  <h2>{{ .Title }}</h2>
+  <h2>
+    {{ if gt .Lastmod 0 -}}<time class="modified-date" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format ($.Param "dateformat" | default "2 January, 2006") }}</time> – {{ end -}}
+    {{- .Title -}}
+  </h2>
   {{ .Content }}
 {{ end -}}
