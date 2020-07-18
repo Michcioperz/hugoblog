@@ -1,6 +1,5 @@
 {{ define "main" -}}
-<main class="main layout__main">
-<h1 class="title">{{ .Title }}</h1>
+  <h2>{{ .Title }}</h2>
 
 <table>
   <thead>
@@ -20,10 +19,4 @@
     {{ end -}}
   </tbody>
 </table>
-
-{{ range .Pages -}}
-{{ .Render "summary"}}
 {{ end -}}
-
-</main>
-{{ end }}
