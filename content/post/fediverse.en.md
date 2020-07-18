@@ -5,9 +5,9 @@ date: 2020-05-22T14:55:29+0200
 
 For many years my favourite social media site was [Twitter](https://twitter.com). I'm not entirely sure why: was it the character limit on the status updates, or the ease of meeting new people, or maybe something else; either way, it was my favourite. However, for the last three years my social media attention has been split between Twitter and the so-called *fediverse*. I'd like to explain a little about what the *fediverse* is and what's good to know before joining.
 
-## The story up until now
+### The story up until now
 
-### What is the fediverse and why?
+#### What is the fediverse and why?
 
 In April 2017 something interesting rose to fame (at least among tech-interested people) from the dark depths of Github – [Mastodon](https://joinmastodon.org), a piece of software for creating social network sites a bit alike to Twitter. The key difference was that the sites created were not separated "walled gardens" – they could exchange their users' messages with one another.
 
@@ -15,13 +15,13 @@ Thanks to this property, user [@michcio@om.nom.pl](https://om.nom.pl/michcio) co
 
 Mastodon caught attention of Twitter's techie lefties with cool features like per-post privacy settings (public or followers-only), as well as per-post *Content Warnings*. Another promise of Mastodon was that of a social network free of Nazis, whatever that meant — and I'll come back to this topic in a moment.
 
-### Why isn't it called just Mastodon?
+#### Why isn't it called just Mastodon?
 
 The concept of federating mini-twitters was far from new. The underlying protocol — OStatus — was taken from another project started in 2008, StatusNet (now renamed [GNU social](https://gnu.io/social/)). Unlike StatusNet, however, Mastodon looked slick and cool <sup>\[citation needed\]</sup> and wasn't written in PHP.
 
 But soon it turned out that the Ruby on Rails framework used for building Mastodon didn't perform as well as was needed. Admins of larger *instances* (instances is how we refer to fedi servers) could usually afford to get better server hardware, but admins of smaller instances could either write a script that restarted Sidekiq every now and then, or they could jump from Mastodon to another server software: Pleroma.
 
-### Is there anything other than Mastodon on fedi?
+#### Is there anything other than Mastodon on fedi?
 
 [Pleroma](https://pleroma.social) wasn't free of the cultural heritage of PHP, either. The first part of Pleroma that came to be was the user interface that could be used with StatusNet instead of what was shipped alongside it. It was more interactive than what it replaced: for one, it dynamically polled the server for new messages and didn't need a page reload for every action. 
 
@@ -29,7 +29,7 @@ Later on the developers decided that it would be better to write an own server. 
 
 Since then, more projects have joined the fediverse, among them [Misskey](https://github.com/syuilo/misskey) strong in Japanese motifs, radically minimalistic and radical in general [Honk](https://humungus.tedunangst.com/r/honk). Less twitter-ish solutions appeared as well, such as educational resources sharing system [MoodleNet](https://moodle.net) and WebTorrent-based YouTube competitor [PeerTube](https://joinpeertube.org). The federation protocol was also replaced – badly documented OStatus was retired in favour of [ActivityPub](https://activitypub.rocks), which even received the mantle of a W3C Recommended Standard.
 
-### So, what's the deal with the Nazis?
+#### So, what's the deal with the Nazis?
 
 As mentioned earlier, the creator of Mastodon expressed his intent to build a network that's safe from Nazis and GamerGaters and such, as he invited lefties and LGBT supporters from Twitter. It was a big deal for many people joining, because they saw moderation on Twitter as too slow and permissive, and thus they felt endangered by this policy of Twitter.
 
@@ -41,19 +41,19 @@ The second group mentioned grew a habit of announcing who they found ban-worthy.
 
 There's also a technical problem to fedi – ActivityPub's design is naive at times, for example, the section of the standard specifying security is marked as non-normative. During transport of messages from source instance to followers' instances the messages receive a irrefutable cryptographic signature. A bad actor following the user could then publish such a followers-only message, and it would be provable that it was really posted by the user.
 
-## Double-edged swords
+### Double-edged swords
 
 As you can see, fedi has its problems and sometimes even I wonder if it's worth my time and effort being a part of it.
 
 Usually, however, I conclude that my friends there are worthwhile, but if you'd like to join, you have to understand what problems might come, because they're often related directly to the benefits of fedi:
 
-### You can (not not) moderate
+#### You can (not not) moderate
 
 I think quite a few people came to fedi for capabilities like this: if there's someone attacking you, you can just block them or their whole instance. Dishonor on them, dishonor on their cow.
 
 But this power has an implicit consequence I observed on the instances I've been to (as user and as admin). At some point you *will have to* moderate, will have to mute or block people or instances, because you will eventually run into people whose behaviour is wayyyyyy out of your comfort zone. I mean, unless you're those people, I guess.
 
-### You can set your own rules on your own instance (and you don't have to agree with anyone, and neither do they)
+#### You can set your own rules on your own instance (and you don't have to agree with anyone, and neither do they)
 
 You can make an instance without any rules (if your country won't take your server or IP address away because of it).
 
@@ -67,13 +67,13 @@ You just have to take into account that:
 
 2. There exist people who will never take a single look at your instance's rules and will spam you with offensive messages until you block them (or become one with them).
 
-### You can make funny bot accounts (and spammers can make less funny spam bots)
+#### You can make funny bot accounts (and spammers can make less funny spam bots)
 
 Making an account on fedi is ridiculously easy. Hell, making a whole instance is easy. And you can use these accounts for a lot of cool stuff, [bots that write funny things](https://botsin.space/@jouns), [bots that make funny images](https://botsin.space/@dogebot), [bots posting weather reports for random cities](https://botsin.space/@randomweather) — there is a lot of potential for cool stuff.
 
 Unfortunately sometimes (not super often, because fedi is still not popular enough) you'll run into waves of spam. Sooner or later you will get a message from a bot telling you to join the *Don't Marry Movement*, in which there are three main rules. (Side note: writing satire ripoffs of it with friends can be great fun.)
 
-### You can't easily search all the messages ever (and few people can)
+#### You can't easily search all the messages ever (and few people can)
 
 Searching can be useful, but the developers of Mastodon decided that it's a dangerous vector for abuse, so Mastodon only allows a limited kind of search. Still, even if it was unrestricted, you'd still be restricted to the messages that reached your instance. The fedi network is large and distributed, and there's a big chance most of the messages people write that are not directed at you somehow will never reach you.
 
@@ -81,7 +81,7 @@ That means, however, that it's a bit harder for people to dig up the stupid stuf
 
 I don't know if it's bad or good, it just is. Take note and think about what you publish.
 
-## You didn't manage to scare me off, where do I sign?
+### You didn't manage to scare me off, where do I sign?
 
 First of all, even if mastodon.social has open registration when you're reading this, don't go there. There's too many people on there, destroying some of the benefits of federation, and it's difficult to moderate on this scale.
 

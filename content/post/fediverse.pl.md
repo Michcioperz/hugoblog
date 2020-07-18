@@ -5,9 +5,9 @@ date: 2020-05-22T14:55:29+0200
 
 Przez długie lata moim ulubionym portalem społecznościowym był [Twitter](https://twitter.com). Nie wiem, czy to przez krótkie wpisy, czy przez łatwe nawiązywanie znajomości, czy przez coś innego, ale tak było. Jednak od trzech lat moja uwaga dzieli się między Twittera a tak zwane *fediwersum*. Chciałbym krótko opowiedzieć, czym to *fediwersum* jest, jakie ma problemy i jak to się ma do Twittera.
 
-## Rys historyczny
+### Rys historyczny
 
-### Czym jest Fediwersum i dlaczego?
+#### Czym jest Fediwersum i dlaczego?
 
 W kwietniu 2017 roku z czeluści Githuba do społecznego światka osób obytych z technologią (nie stricte programistów) przebił się [Mastodon](https://joinmastodon.org) – oprogramowanie do hostowania portali społecznościowych podobnych do Twittera. Różnica polegała na tym, że tak postawione serwery nie były osobnymi „zamkniętymi ogrodami”, ale mogły wymieniać między sobą wpisy swoich użytkowników.
 
@@ -15,13 +15,13 @@ Tak więc użytkownik [@michcio@om.nom.pl](https://om.nom.pl/michcio) mógł bez
 
 Sympatię twitterowej technolewicy Mastodon zaskarbił sobie możliwościami takimi jak dostosowywanie prywatności każdego wpisu (publiczny lub tylko dla znajomych) lub ukrycie treści wpisu i załączonych obrazków za wybranym *Content Warning*. Ważnym argumentem za ucieczką na Mastodon była też obietnica sieci społecznościowej wolnej od nazistów, cokolwiek miał na myśli autor Mastodona – o tym później.
 
-### Dlaczego nie nazywamy tego Mastodon?
+#### Dlaczego nie nazywamy tego Mastodon?
 
 Pomysł federowania mini-twitterów nie był nowy, nawet sam protokół — OStatus — został zapożyczony z powstałego w 2008 roku oprogramowania StatusNet (obecnie [GNU social](https://gnu.io/social/)), natomiast Mastodon wyglądał dużo lepiej niż StatusNet <sup>\[potrzebny cytat\]</sup> i nie był napisany w PHP.
 
 Wkrótce okazało się, że zastosowane pod maską Mastodona Ruby on Rails nie jest super wydajne, ale administratorzy większych *instancji* — bo tak mówi się o serwerach fediwersum — skądś znajdowali fundusze na więcej rdzeniów, a administratorzy mniejszych albo pisali skrypt restartujący Sidekiqa co kilka-kilkanaście godzin, albo przesiadali się z Mastodona na inne oprogramowanie serwerowe: Pleromę.
 
-### Co poza Mastodonem?
+#### Co poza Mastodonem?
 
 [Pleroma](https://pleroma.social) również czerpała z bogatego PHPowego dziedzictwa kulturowego, jako że pierwszym jej napisanym komponentem był interfejs graficzny, który można było wgrać na swoją instancję StatusNet. W przeciwieństwie do oryginalnego interfejsu dawał większą interaktywność, np. odpytywał dynamicznie serwer o nowe wpisy i nie wymagał przełądowania strony przy każdym działaniu.
 
@@ -29,7 +29,7 @@ Później twórcy projektu uznali, że lepiej będzie napisać od podstaw własn
 
 Później do puli dostępnych serwerów zaczęły dołączać kolejne projekty, takie jak kulturowo silnie japoński [Misskey](https://github.com/syuilo/misskey) i radykalnie minimalistyczny (i ogólnie radykalny) [Honk](https://humungus.tedunangst.com/r/honk) ale też bardziej odbiegające od konwencji Twittera: portal do wymiany materiałów edukacyjnych [MoodleNet](https://moodle.net) czy oparty o WebTorrenty klon YouTube'a [PeerTube](https://joinpeertube.org). Zmianie uległ też najszerzej używany protokół wymiany wpisów – pozbyto się słabo udokumentowanego OStatusa, a w jego miejsce przyjęto [ActivityPub](https://activitypub.rocks), który doczekał się nawet uznania przez W3C za „rekomendowany standard”.
 
-### To o co w końcu chodzi z tymi nazistami?
+#### To o co w końcu chodzi z tymi nazistami?
 
 Jak wspomniałem wcześniej, twórca Mastodona spraszając lewicę i społeczności LGBT z Twittera mówił o tym, że budowana przez niego sieć będzie odporna na nazistów i środowiska takie jak GamerGate. Dla wielu osób dołączających do Mastodona było to o tyle ważne, że uważały moderację na Twitterze za zbyt spolegliwą, czuły się zagrożone.
 
@@ -41,19 +41,19 @@ Wśród grupy drugiej wykształciła się praktyka ogłaszania, kogo warto bloko
 
 Istnieje też problem bardziej techniczny – protokół ActivityPub jest zaprojektowany w sposób dość naiwny, w szczególności sekcja specyfikacji dotycząca bezpieczeństwa jest oznaczona jako nienormatywna. Podczas transportu wpisów z instancji źródłową na instancje osób obserwujących wpisy otrzymują niezaprzeczalny podpis kryptograficzny. Taki wpis może zostać ujawniony przez wrogiego obserwującego razem z podpisem.
 
-## Miecze obosieczne
+### Miecze obosieczne
 
 Jak widać, fediwersum ma swoje problemy i sam czasem zastanawiam się, czy warto tam siedzieć mimo tych problemów.
 
 Zwykle jednak dochodzę do wniosku, że warto, tylko trzeba mieć świadomość tych problemów, bo często wynikają one po prostu z zalet tej sieci:
 
-### Możesz (musisz) moderować
+#### Możesz (musisz) moderować
 
 To jest chyba ta zaleta, dla której sporo osób tutaj przyszło: jeżeli ktoś cię atakuje, to możesz zablokować jego albo całą jego instancję.
 
 Z drugiej strony mam taką obserwację z instancji, na których byłem — jako administrator bądź użytkownik — że w pewnym momencie musisz przyjąć jakąś strategię moderacji, bo trafisz na takich ludzi, których zachowanie będzie ostro poza twoją strefą komfortu.
 
-### Możesz samemu ustalić reguły swojej instancji (i nie musisz się ze wszystkimi zgadzać, a oni z tobą)
+#### Możesz samemu ustalić reguły swojej instancji (i nie musisz się ze wszystkimi zgadzać, a oni z tobą)
 
 Możesz założyć instancję, na której nie ma zasad (jeżeli mieszkasz w kraju, w którym nie zostanie ci za to odebrany serwer lub adres IP).
 
@@ -63,13 +63,13 @@ Możesz założyć [instancję, na której nie wolno używać litery E](https://
 
 Musisz jednak mieć na uwadze, że z jednej strony ludzie patrzą na twoje reguły i na tej podstawie decydują, czy się z tobą kolegować, a z drugiej strony są ludzie, którzy nie będą patrzeć na twoje reguły, tylko powysyłają ci obraźliwe komentarze, aż ich zablokujesz (lub zaakceptujesz).
 
-### Możesz łatwo tworzyć śmieszne boty (spamerzy też mogą)
+#### Możesz łatwo tworzyć śmieszne boty (spamerzy też mogą)
 
 Konta tworzy się łatwo. Ba, nawet instancje tworzy się dosyć łatwo. Dzięki temu możesz tworzyć [boty piszące śmieszne rzeczy](https://botsin.space/@jouns), [boty wrzucające śmieszne obrazki](https://botsin.space/@dogebot), [boty wrzucające prognozę pogody dla losowych miast](https://botsin.space/@randomweather) i wiele innych.
 
 Niestety czasami (nie często, bo fedi jest nadal za mało popularne) zdarzają się fale spamu, więc pewnie prędzej czy później jakiś spambot zaproponuje ci dołączenie do *Don't Marry Movement*, opisując trzy najważniejsze reguły tego ruchu.
 
-### Nie możesz łatwo przeszukiwać wszystkich postów (i mało kto może)
+#### Nie możesz łatwo przeszukiwać wszystkich postów (i mało kto może)
 
 Wyszukiwanie czasem się przydaje, jednak przez osoby rozwijające Mastodona jest uważane za groźne, bo ułatwia nękanie. Zresztą nawet gdyby nie było ograniczone, to możesz przeszukiwać tylko bazę wpisów na tej konkretnej instancji – sieć jest rozproszona, więc ze sporym prawdopodobieństwem wiele wpisów nigdy do ciebie nie dotrze.
 
@@ -77,7 +77,7 @@ Ale innym też będzie trudno szukać wpisów o tobie. Szczególnie, jeśli będ
 
 To jest coś co trudno jasno określić jako dobre lub złe. Ale da się z tym żyć.
 
-## Nie odstraszyłeś mnie, gdzie mam podpisać?
+### Nie odstraszyłeś mnie, gdzie mam podpisać?
 
 Przede wszystkim, nawet jeśli rejestracja na flagowej instancji mastodon.social jest otwarta, nie idź tam. Moim zdaniem silne skupienie użytkowników na jednej instancji przyczyniło się po części do opisanego wcześniej spolaryzowania sieci.
 

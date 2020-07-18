@@ -4,13 +4,13 @@ title = "Life changelog"
   weight = 10
 +++
 
-#### Currently
+### Currently
 
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)
   - finished BSc as of July 2020, admitted for MSc programme
 - looking for a new job, please [contact me]({{< ref "./contact" >}}) if you have something interesting to offer
 
-#### Formerly
+### Formerly
 
 - system administrator for **Foundation for Information Technology Development**
   - maintained the grading system of [Polish Olympiad in Informatics](https://oi.edu.pl)

@@ -4,13 +4,13 @@ title = "Do tej pory"
   weight = 10
 +++
 
-#### Co robię
+### Co robię
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
   - uzyskałem tytuł licencjata w lipcu 2020, zostałem zakwalifikowany na studia magisterskie
 - szukam ciekawej pracy, posiadaczy ciekawych propozycji zachęcam do [kontaktu]({{< ref "./contact" >}})
 
-#### Co robiłem
+### Co robiłem
 
 - pracowałem jako administrator dla **Fundacji Rozwoju Informatyki**
   - utrzymywałem system sprawdzający polskiej [Olimpiady Informatycznej](https://oi.edu.pl)
