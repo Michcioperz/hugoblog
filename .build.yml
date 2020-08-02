@@ -8,12 +8,14 @@ secrets:
 sources:
   - https://git.sr.ht/~michcioperz/hugoblog
 tasks:
+  - fix_timezone: |
+      sudo timedatectl set-timezone Europe/Warsaw
   - deps: |
       gem install neocities
       mkdir ~/.config/neocities -p
   - build: |
       cd hugoblog
-      TZ=Europe/Warsaw hugo
+      hugo
   - deploy-pl: |
       cp ~/.pl-neocities-secret ~/.config/neocities/config
       cd hugoblog/public/pl
