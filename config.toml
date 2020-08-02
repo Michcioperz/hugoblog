@@ -17,8 +17,12 @@ enableRobotsTxt = true
     languageName = "English"
     baseURL = "https://michcioperz.com"
     weight = 1
+    [languages.en.params]
+      description = "The website and the blog of Michał Sidor, a programmer"
   [languages.pl]
     languageName = "polski"
     baseURL = "https://ijestfajnie.pl"
     weight = 2
+    [languages.pl.params]
+      description = "Strona i blog programisty Michała Sidora"
 
