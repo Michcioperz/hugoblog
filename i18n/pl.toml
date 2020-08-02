@@ -1,2 +1,10 @@
 ["Other available languages for this page:"]
 other = "Ta strona jest również dostępna w następujących językach:"
+
+["words"]
+one = "{{.Count}} słowo"
+other = "{{.Count}} słów"
+
+["readingTime"]
+one = "~{{.Count}} minuta"
+other = "~{{.Count}} minut"

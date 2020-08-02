@@ -1,2 +1,10 @@
 ["Other available languages for this page:"]
 other = "Other available languages for this page:"
+
+["words"]
+one = "{{.Count}} word"
+other = "{{.Count}} words"
+
+["readingTime"]
+one = "~{{.Count}} minute"
+other = "~{{.Count}} minutes"
