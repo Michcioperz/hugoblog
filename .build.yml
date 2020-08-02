@@ -13,7 +13,7 @@ tasks:
       mkdir ~/.config/neocities -p
   - build: |
       cd hugoblog
-      hugo
+      TZ=Europe/Warsaw hugo
   - deploy-pl: |
       cp ~/.pl-neocities-secret ~/.config/neocities/config
       cd hugoblog/public/pl
