@@ -1,6 +1,7 @@
 title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
+copyright = "Copyright © Michał Sidor"
 
 [markup]
   [markup.highlight]
@@ -11,6 +12,9 @@ enableRobotsTxt = true
 
 [params]
   dateFormat = "2006-01-02"
+
+[author]
+  name = "Michał Sidor"
 
 [languages]
   [languages.en]
