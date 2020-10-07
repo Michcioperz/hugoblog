@@ -1,7 +1,7 @@
 @font-face
   font-family: 'Literata'
   font-display: swap
-  src: local('Literata'), url({{ (resources.Get (path.Join "/fonts" "literata" "variable" "Literata-Roman-VF.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
+  src: local('Literata'), url({{ (resources.Get (path.Join "/fonts" "literata" "variable" "Literata-Roman-VF.ttf.trimmed.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
 {{ range $weight, $weightInt := dict "light" 300 "regular" 400 "semibold" 500 "bold" 600 -}}
 @font-face
   font-family: 'Overpass Mono'
