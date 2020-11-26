@@ -1,6 +1,6 @@
 +++
 title = "Spare ACNH recipes"
-date = 2020-10-12T21:39:00+02:00
+date = 2020-11-26T19:07:00+02:00
 +++
 
 Here is a list of _Animal Crossing: New Horizons_ recipes that I have spares of, available for pickup on my island upon [contact]({{< ref "contact.md" >}}):
@@ -14,6 +14,7 @@ Here is a list of _Animal Crossing: New Horizons_ recipes that I have spares of,
  - Ironwood bed
  - Key holder
  - Knight's helmet
+ - Leaf mask
  - Manga-library wall
  - Mountain standee
  - Pear bed
