@@ -7,8 +7,8 @@ title = "Do tej pory"
 ### Co robię
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
-  - uzyskałem tytuł licencjata w lipcu 2020, zostałem zakwalifikowany na studia magisterskie
-- szukam ciekawej pracy, posiadaczy ciekawych propozycji zachęcam do [kontaktu]({{< ref "./contact" >}})
+  - uzyskałem tytuł licencjata w lipcu 2020, potem rozpocząłem studia magisterskie
+- rozwijam backend dla [Calmsie](https://calmsie.ai)
 
 ### Co robiłem
 

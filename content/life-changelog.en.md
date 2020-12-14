@@ -7,8 +7,8 @@ title = "Life changelog"
 ### Currently
 
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)
-  - finished BSc as of July 2020, admitted for MSc programme
-- looking for a new job, please [contact me]({{< ref "./contact" >}}) if you have something interesting to offer
+  - finished BSc as of July 2020, in the MSc programme since then
+- developing some backend for [Calmsie](https://calmsie.ai)
 
 ### Formerly
 
