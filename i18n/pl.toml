@@ -2,7 +2,11 @@
 other = "Ta strona jest również dostępna w następujących językach:"
 
 ["words"]
-other = "{{ .Count }} słów"
+one = "1 słowo"
+few = "{{ .Count }} słowa"
+many = "{{ .Count }} słów"
 
 ["readingTime"]
-other = "~{{.Count}} min."
+one = "~1 min."
+few = "~{{ .Count }} min."
+many = "~{{ .Count }} min."
