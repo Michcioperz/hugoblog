@@ -9,5 +9,5 @@
   "conversation": {{ printf "%sconversation" .Permalink | jsonify }},
   "inReplyTo": null,
   "type": "Article",
-  "content": {{ .Content | jsonify }}
+  "content": {{ printf "<p><strong>%s</strong></p>\n%s" .Title .Content | jsonify }}
 }
