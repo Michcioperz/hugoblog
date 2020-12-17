@@ -1,0 +1,5 @@
+---
+isactor: true
+outputs:
+- json
+---

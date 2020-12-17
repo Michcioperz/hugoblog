@@ -1,0 +1,29 @@
+{{- if (.Params.isactor | default false) -}}
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1"
+  ],
+  "followers": {{ ref . "ap/followers" | jsonify }},
+  "id": {{ .Permalink | jsonify }},
+  "name": {{ .Site.Title | jsonify }},
+  "summary": {{ .Site.Params.description | jsonify }},
+  "outbox": {{ ref . (dict "path" "post" "outputFormat" "json") | jsonify }},
+  "inbox": "https://blog-relay.hinata.iscute.ovh/inbox",
+  "publicKey": {
+    "id": {{ printf "%s#main-key" .Permalink | jsonify }},
+    "owner": {{ .Permalink | jsonify }},
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyKpQETC5F/6ccQBoUnS5\n23187rCMC5jcQjpHrhSX0TIs3k+XZEX9bxbc+NJHp/ZRdAOKT1X5HrOTmD02RgRV\nbTgkVSHf8DnkKTxeYuoSabfHMX5aS3+kFmfPtHz5JdrXmOLF9NTfIJ8PEMh98N9L\nT2DYRK68COmINGKXi7OVTFCB6PJxDViKSdugct2dHRLwS8qLbLrygQjpe09HuLt6\ntCMNkk94Wv651vAV527OvhMhdNWalSL13F3SJ3CLs46QwE77UTqMe81IcIv6UJHj\nGTL/WWg/Aep4ZqZcsOu0lqUghSoopBbfnQODkmBh/rfAXa23hYityrkUHCy4vMso\nPQIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "preferredUsername": "blog",
+  "type": "Service"
+}
+{{- else -}}
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "OrderedCollection",
+  "id": {{ .Permalink | jsonify }},
+  "totalItems": {{ len .Pages | jsonify }},
+  "items": {{ $pages := slice }}{{ range .Pages -}}{{ $pages = $pages | append (.OutputFormats.Get "json").Permalink -}}{{ end -}}{{ $pages | jsonify }}
+}
+{{- end -}}

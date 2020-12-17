@@ -1,7 +1,16 @@
 title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
+enableGitInfo = true
 copyright = "Copyright © Michał Sidor"
+
+[outputs]
+  page = ["HTML", "json"]
+  section = ["HTML", "json"]
+
+[mediaTypes]
+  [mediaTypes."application/activity+json"]
+    suffixes = ["json"]
 
 [markup]
   [markup.highlight]
