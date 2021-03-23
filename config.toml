@@ -1,7 +1,6 @@
 title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
-enableGitInfo = true
 copyright = "Copyright © Michał Sidor"
 
 [outputs]
