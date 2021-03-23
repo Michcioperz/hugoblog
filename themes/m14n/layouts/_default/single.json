@@ -3,7 +3,7 @@
   "attributedTo": {{ ref . "ap/actor" | jsonify }},
   "to": ["https://www.w3.org/ns/activitystreams#Public"],
   "cc": [{{ (ref . "ap/followers")| jsonify }}],
-  "published": "{{ (.GitInfo | default (dict "AuthorDate" .Date)).AuthorDate.Format "2006-01-02T15:04:05Z" }}",
+  "published": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
   "id": {{ (.OutputFormats.Get "json").Permalink | jsonify }},
   "url": {{ (.OutputFormats.Get "html").Permalink | jsonify }},
   "conversation": {{ printf "%sconversation" .Permalink | jsonify }},
