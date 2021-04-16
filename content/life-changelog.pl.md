@@ -8,10 +8,11 @@ title = "Do tej pory"
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
   - uzyskałem tytuł licencjata w lipcu 2020, potem rozpocząłem studia magisterskie
-- rozwijam backend dla [Calmsie](https://calmsie.ai)
+  - dołączyłem do projektu badawczego [ngSim](https://www.mimuw.edu.pl/~iwanicki/projects/ngSim/)
 
 ### Co robiłem
 
+- rozwijałem backend dla [Calmsie](https://calmsie.ai)
 - pracowałem jako administrator dla **Fundacji Rozwoju Informatyki**
   - utrzymywałem system sprawdzający polskiej [Olimpiady Informatycznej](https://oi.edu.pl)
   - obsługiwałem problemy techniczne uczestników konkursów niezdalnych

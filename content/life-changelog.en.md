@@ -8,10 +8,11 @@ title = "Life changelog"
 
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)
   - finished BSc as of July 2020, in the MSc programme since then
-- developing some backend for [Calmsie](https://calmsie.ai)
+  - joined [ngSim](https://www.mimuw.edu.pl/~iwanicki/projects/ngSim/) research project
 
 ### Formerly
 
+- developed some backend for [Calmsie](https://calmsie.ai)
 - system administrator for **Foundation for Information Technology Development**
   - maintained the grading system of [Polish Olympiad in Informatics](https://oi.edu.pl)
   - handled technical issues of participants during on-site competitions
