@@ -4,6 +4,10 @@ title = "Life changelog"
   weight = 10
 +++
 
+### Soon-ish
+
+- internship at [Sentry](https://sentry.io) in Summer 2021
+
 ### Currently
 
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)

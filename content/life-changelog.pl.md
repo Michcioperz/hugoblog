@@ -4,6 +4,10 @@ title = "Do tej pory"
   weight = 10
 +++
 
+### Co będę robił
+
+- staż w [Sentry](https://sentry.io) w wakacje 2021
+
 ### Co robię
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
