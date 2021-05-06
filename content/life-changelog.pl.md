@@ -12,7 +12,7 @@ title = "Do tej pory"
 
 - studiuję informatykę na [Wydziale Matematyki, Informatyki i Mechaniki](https://mimuw.edu.pl) [Uniwersytetu Warszawskiego](https://uw.edu.pl)
   - uzyskałem tytuł licencjata w lipcu 2020, potem rozpocząłem studia magisterskie
-  - dołączyłem do projektu badawczego [ngSim](https://www.mimuw.edu.pl/~iwanicki/projects/ngSim/)
+  - dołączyłem do projektu badawczego [ngSim](https://www.mimuw.edu.pl/~iwanicki/projects/ngSim/), rozwijam dokładny-co-do-cyklu symulator Cortex-M w Ruście
 
 ### Co robiłem
 
