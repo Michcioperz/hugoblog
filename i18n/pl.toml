@@ -10,3 +10,6 @@ many = "{{ .Count }} słów"
 one = "~1 min."
 few = "~{{ .Count }} min."
 many = "~{{ .Count }} min."
+
+["pfp"]
+other = "Zdjęcie Michała. Michał jest białym mężczyzną w wieku około 20 lat, ma ciemne włosy blond sięgające miejscami jego ramion, lekko kręcone przy końcach. Na zdjęciu uśmiecha się i patrzy na odbiorcę, ma na sobie słuchawki nauszne, okulary o ciemnoniebieskiej ramce i ciemną koszulkę."

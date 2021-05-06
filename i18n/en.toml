@@ -8,3 +8,6 @@ other = "{{.Count}} words"
 ["readingTime"]
 one = "~{{.Count}} minute"
 other = "~{{.Count}} minutes"
+
+["pfp"]
+other = "Photo of Michał. Michał is a white guy in his twenties and dark blonde hair partially reaching his shoulders and curling at the ends. In the photo he's smiling and looking at the viewer, and he's wearing headphones, glasses with a dark blue frame, and a dark T-shirt."

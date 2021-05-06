@@ -5,10 +5,9 @@ title = "Kontakt"
 +++
 
  - email: <mailto:public+blog@meekchopp.es>
- - jabber: <xmpp:michcioperz@z.nom.pl>
+ - telegram: [@michcioperz](https://t.me/michcioperz)
 
 Mniej preferowane:
 
  - twitter: [@Michcioperz](https://twitter.com/Michcioperz)
- - discord: `Michcioperz#2658`
- - telegram: [@michcioperz](https://t.me/michcioperz)
+ - discord: `Michcio#2658`
