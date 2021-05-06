@@ -1,0 +1,5 @@
+{{ $pfp := resources.Get "michcio.jpg" -}}
+<picture class="pfp">
+  <source srcset="{{ ($pfp.Resize "250x250 webp photo" | resources.Fingerprint).RelPermalink }}">
+  <img src="{{ ($pfp.Resize "250x250 jpg photo" | resources.Fingerprint).RelPermalink }}" alt="{{ i18n "pfp" }}">
+</picture>
