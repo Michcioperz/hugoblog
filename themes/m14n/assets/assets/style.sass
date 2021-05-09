@@ -1,12 +1,12 @@
 @font-face
   font-family: 'Literata'
   font-display: swap
-  src: local('Literata'), url({{ (resources.Get (path.Join "/fonts" "literata" "variable" "Literata-Roman-VF.ttf.trimmed.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
+  src: local('Literata'), url({{ (resources.Get (path.Join "assets/fonts" "literata" "variable" "Literata-Roman-VF.ttf.trimmed.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
 {{ range $weight, $weightInt := dict "light" 300 "regular" 400 "semibold" 500 "bold" 600 -}}
 @font-face
   font-family: 'Overpass Mono'
   font-display: swap
-  src: local('OverpassMono'), local('Overpass Mono') {{ range $ext, $format := dict ".woff2" "woff2" ".woff" "woff" ".ttf" "truetype" }}, url({{ (resources.Get (path.Join "/fonts" "overpass-mono" (printf "overpass-mono-%s%s" $weight $ext)) | resources.Fingerprint).RelPermalink }}) format("{{ $format }}"){{ end }}
+  src: local('OverpassMono'), local('Overpass Mono') {{ range $ext, $format := dict ".woff2" "woff2" ".woff" "woff" ".ttf" "truetype" }}, url({{ (resources.Get (path.Join "assets/fonts" "overpass-mono" (printf "overpass-mono-%s%s" $weight $ext)) | resources.Fingerprint).RelPermalink }}) format("{{ $format }}"){{ end }}
   font-weight: {{ $weightInt }}
   font-style: normal
 {{ end -}}
