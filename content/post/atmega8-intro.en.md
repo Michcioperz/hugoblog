@@ -1,6 +1,7 @@
 ---
 title: "Atmega8 programming, part 1: the backstory and how to not-blink an LED"
 date: "2020-07-27"
+containsCode: true
 ---
 
 **This post has, for the time being, unsatisfying conclusion. You have been

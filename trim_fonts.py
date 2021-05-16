@@ -1,5 +1,5 @@
-#!/usr/bin/env python2
-# encoding: utf-8
+#!/usr/bin/env nix-shell
+#!nix-shell -p fontforge -i fontforge
 import codecs
 import glob
 import os
@@ -7,10 +7,16 @@ import os.path
 
 import fontforge
 
-def all_files():
-    for (dirpath, dirnames, filenames) in os.walk("."):
+def all_files_of(root):
+    for (dirpath, dirnames, filenames) in os.walk(root):
         for filename in filenames:
             yield os.path.join(dirpath, filename)
+
+def all_files():
+    yield from all_files_of("content")
+    yield from all_files_of("i18n")
+    yield from all_files_of("layouts")
+    yield from all_files_of("themes/m14n/layouts")
 
 glyphs = set()
 for content_file in all_files():

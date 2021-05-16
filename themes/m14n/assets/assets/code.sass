@@ -1,0 +1,146 @@
+\:root
+  --chroma-bg: #e5e5e5
+  --chroma-highlight: #ffffcc
+  --chroma-keyword: var(--accent)
+  --chroma-type: #902000
+  --chroma-attribute: #4070a0
+  --chroma-class: #0e84b5
+  --chroma-constant: #60add5
+  --chroma-decorator: #555555
+  --chroma-entity: #d55537
+  --chroma-func: #327163
+  --chroma-tag: var(--chroma-func)
+  --chroma-variable: #bb60d5
+  --chroma-literal: #b4046d
+  --chroma-interpol: #70a0d0
+  --chroma-otherstring: #c65d09
+  --chroma-regex: #235388
+  --chroma-symbol: #517918
+  --chroma-operator: #666666
+  --chroma-comment: #00455c
+  --chroma-speccommentbg: #fff0f0
+  --chroma-inserted: #00a000
+  --chroma-deleted: #a00000
+  --chroma-error: #ff0000
+  --chroma-traceback: #0044dd
+  --chroma-heading: #000080
+  --chroma-output: #888888
+  --chroma-prompt: #c65d09
+  --chroma-whitespace: #bbbbbb
+  @media (prefers-color-scheme: dark)
+    --chroma-bg: #181b23
+    --chroma-func: #ffeb38
+    --chroma-literal: #b2f5b8
+    --chroma-operator: #cccccc
+    --chroma-comment: #b3ecff
+
+.chroma // syntax highlighting widget
+  background-color: var(--chroma-bg)
+  .x // other
+  .err // error
+  .lntd // line table td
+    vertical-align: top
+    padding: 0
+    margin: 0
+    border: 0
+  .lntable // line table
+    border-spacing: 0
+    padding: 0
+    margin: 0
+    border: 0
+    width: auto
+    overflow: auto
+    display: block
+  .hl // line highlight
+    display: block
+    width: 100%
+    background-color: var(--chroma-highlight)
+  .lnt, .ln // line numbers table
+    margin-right: 0.4em
+    padding: 0 0.4em 0 0.4em
+  .k, .kc, .kd, .kn, .kr, .nb, .nl, .ow // keyword, constant, declaration, namespace, reserved, builtin, label, operator word
+    color: var(--chroma-keyword)
+    font-weight: bold
+  .kp, .bp, .ne, .cpf // keyword pseudo, builtin pseudo, name exception, preprocessor directive comment, preprocessor directive comment file
+    color: var(--chroma-keyword)
+  .kt // keyword type
+    color: var(--chroma-type)
+  .n // name
+  .na // attribute
+    color: var(--chroma-attribute)
+  .nc, .nn // class, namespace
+    color: var(--chroma-class)
+    font-weight: bold
+  .no // name constant
+    color: var(--chroma-constant)
+  .nd // name decorator
+    color: var(--chroma-decorator)
+    font-weight: bold
+  .ni // name entity
+    color: var(--chroma-entity)
+    font-weight: bold
+  .nf // name function
+    color: var(--chroma-func)
+  .fm // name function magic
+  .nx // name other
+  .py // name property
+  .nt // name tag
+    color: var(--chroma-tag)
+    font-weight: bold
+  .nv // variable
+    color: var(--chroma-variable)
+  .vc, .vg, .vi, .vm // variable class, global, instance, magic
+  .l, .ld, .p // literal, date, punctuation
+  .s, .sa, .sb, .sc, .dl, .s2, .sh, .s1, .m, .mb, .mf, .mh, .mi, .il, .mo // literal string, affix, backtick, char, delimiter, double, heredoc, single, number, binary number float, hex, integer, long, octal
+    color: var(--chroma-literal)
+  .sd // string doc
+    color: var(--chroma-literal)
+    font-style: italic
+  .se // string escape
+    color: var(--chroma-literal)
+    font-weight: bold
+  .si // string interpolation
+    color: var(--chroma-interpol)
+    font-style: italic
+  .sx // literal string other
+    color: var(--chroma-otherstring)
+  .sr // literal regex
+    color: var(--chroma-regex)
+  .ss // literal symbol
+    color: var(--chroma-symbol)
+  .o // operator
+    color: var(--chroma-operator)
+  .c, .ch, .cm, .c1 // comment, hashbang, multiline comment, single comment
+    color: var(--chroma-comment)
+    font-style: italic
+  .cs // special comment
+    color: var(--chroma-comment)
+    background-color: var(--chroma-speccommentbg)
+  .g // generic
+  .gi // generic inserted
+    color: var(--chroma-inserted)
+  .gd // generic deleted
+    color: var(--chroma-deleted)
+  .gr // generic error
+    color: var(--chroma-error)
+  .gt // generic traceback
+    color: var(--chroma-traceback)
+  .gh // generic heading
+    color: var(--chroma-heading)
+    font-weight: bold
+  .gu // generic subheading
+    color: var(--chroma-heading)
+    font-weight: bold
+  .gs // generic strong
+    font-weight: bold
+  .ge // generic emphasis
+    font-style: italic
+  .gl // generic underline
+    text-decoration: underline
+  .go // generic output
+    color: var(--chroma-output)
+  .gp // generic prompt
+    color: var(--chroma-prompt)
+    font-weight: bold
+  .w // whitespace
+    color: var(--chroma-whitespace)

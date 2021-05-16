@@ -1,16 +1,3 @@
-@font-face
-  font-family: 'Literata'
-  font-display: swap
-  src: local('Literata'), url({{ (resources.Get (path.Join "assets/fonts" "literata" "variable" "Literata-Roman-VF.ttf.trimmed.ttf") | resources.Fingerprint).RelPermalink }}) format("truetype")
-{{ range $weight, $weightInt := dict "light" 300 "regular" 400 "semibold" 500 "bold" 600 -}}
-@font-face
-  font-family: 'Overpass Mono'
-  font-display: swap
-  src: local('OverpassMono'), local('Overpass Mono') {{ range $ext, $format := dict ".woff2" "woff2" ".woff" "woff" ".ttf" "truetype" }}, url({{ (resources.Get (path.Join "assets/fonts" "overpass-mono" (printf "overpass-mono-%s%s" $weight $ext)) | resources.Fingerprint).RelPermalink }}) format("{{ $format }}"){{ end }}
-  font-weight: {{ $weightInt }}
-  font-style: normal
-{{ end -}}
-
 .container
   width: 90%
   max-width: 1000px
@@ -20,19 +7,17 @@
 
 \:root
   color-scheme: light dark
-
-//$accent: #984447
- $light: #add9f4
- $dark: #101419
-
-$light: #ffffff
-$dark: #2d3142
-$light-accent: #98360b
-$dark-accent: #F7B497
+  --bg: #ffffff
+  --fg: #2d3142
+  --accent: #98360b
+  @media (prefers-color-scheme: dark)
+    --bg: #15171e
+    --fg: #ffffff
+    --accent: #ef885d
 
 a:link, a:active, a:visited
   display: inline-block
-  color: $light-accent
+  color: var(--accent)
   & > *
     margin:
       top: 0
@@ -40,13 +25,13 @@ a:link, a:active, a:visited
 
 body
   overflow-y: scroll
-  background-color: $light
-  color: $dark
-  font-family: 'Literata'
+  background-color: var(--bg)
+  color: var(--fg)
+  font-family: 'Literata', serif
   font-size: 1.2em
 
 pre, code
-  font-family: 'Overpass Mono'
+  font-family: 'OverpassMono Nerd Font', 'Overpass Mono', 'Ubuntu Mono', monospace
 
 img
   max-width: 100%
@@ -77,7 +62,7 @@ nav, footer, main, header h1, article
 
 nav, footer, main
   border:
-    top: 0.2em dashed $light-accent
+    top: 0.2em dashed var(--accent)
 
 nav
   ul
@@ -88,293 +73,3 @@ nav
     li
       flex: 1 1
       display: inline
-
-$chroma-bg: darken($light, 10%)
-$chroma-highlight: #ffffcc
-$chroma-keyword: $light-accent
-$chroma-type: #902000
-$chroma-attribute: #4070a0
-$chroma-class: #0e84b5
-$chroma-constant: #60add5
-$chroma-decorator: #555555
-$chroma-entity: #d55537
-$chroma-func: #327163
-$chroma-tag: $chroma-func
-$chroma-variable: #bb60d5
-$chroma-literal: #b4046d
-$chroma-interpol: #70a0d0
-$chroma-otherstring: #c65d09
-$chroma-regex: #235388
-$chroma-symbol: #517918
-$chroma-operator: #666666
-$chroma-comment: #00455c
-$chroma-speccommentbg: #fff0f0
-$chroma-inserted: #00a000
-$chroma-deleted: #a00000
-$chroma-error: #ff0000
-$chroma-traceback: #0044dd
-$chroma-heading: #000080
-$chroma-output: #888888
-$chroma-prompt: #c65d09
-$chroma-whitespace: #bbbbbb
-.chroma // syntax highlighting widget
-  background-color: $chroma-bg
-  .x // other
-  .err // error
-  .lntd // line table td
-    vertical-align: top
-    padding: 0
-    margin: 0
-    border: 0
-  .lntable // line table
-    border-spacing: 0
-    padding: 0
-    margin: 0
-    border: 0
-    width: auto
-    overflow: auto
-    display: block
-  .hl // line highlight
-    display: block
-    width: 100%
-    background-color: $chroma-highlight
-  .lnt, .ln // line numbers table
-    margin-right: 0.4em
-    padding: 0 0.4em 0 0.4em
-  .k, .kc, .kd, .kn, .kr, .nb, .nl, .ow // keyword, constant, declaration, namespace, reserved, builtin, label, operator word
-    color: $chroma-keyword
-    font-weight: bold
-  .kp, .bp, .ne, .cpf // keyword pseudo, builtin pseudo, name exception, preprocessor directive comment, preprocessor directive comment file
-    color: $chroma-keyword
-  .kt // keyword type
-    color: $chroma-type
-  .n // name
-  .na // attribute
-    color: $chroma-attribute
-  .nc, .nn // class, namespace
-    color: $chroma-class
-    font-weight: bold
-  .no // name constant
-    color: $chroma-constant
-  .nd // name decorator
-    color: $chroma-decorator
-    font-weight: bold
-  .ni // name entity
-    color: $chroma-entity
-    font-weight: bold
-  .nf // name function
-    color: $chroma-func
-  .fm // name function magic
-  .nx // name other
-  .py // name property
-  .nt // name tag
-    color: $chroma-tag
-    font-weight: bold
-  .nv // variable
-    color: $chroma-variable
-  .vc, .vg, .vi, .vm // variable class, global, instance, magic
-  .l, .ld, .p // literal, date, punctuation
-  .s, .sa, .sb, .sc, .dl, .s2, .sh, .s1, .m, .mb, .mf, .mh, .mi, .il, .mo // literal string, affix, backtick, char, delimiter, double, heredoc, single, number, binary number float, hex, integer, long, octal
-    color: $chroma-literal
-  .sd // string doc
-    color: $chroma-literal
-    font-style: italic
-  .se // string escape
-    color: $chroma-literal
-    font-weight: bold
-  .si // string interpolation
-    color: $chroma-interpol
-    font-style: italic
-  .sx // literal string other
-    color: $chroma-otherstring
-  .sr // literal regex
-    color: $chroma-regex
-  .ss // literal symbol
-    color: $chroma-symbol
-  .o // operator
-    color: $chroma-operator
-  .c, .ch, .cm, .c1 // comment, hashbang, multiline comment, single comment
-    color: $chroma-comment
-    font-style: italic
-  .cs // special comment
-    color: $chroma-comment
-    background-color: $chroma-speccommentbg
-  .g // generic
-  .gi // generic inserted
-    color: $chroma-inserted
-  .gd // generic deleted
-    color: $chroma-deleted
-  .gr // generic error
-    color: $chroma-error
-  .gt // generic traceback
-    color: $chroma-traceback
-  .gh // generic heading
-    color: $chroma-heading
-    font-weight: bold
-  .gu // generic subheading
-    color: $chroma-heading
-    font-weight: bold
-  .gs // generic strong
-    font-weight: bold
-  .ge // generic emphasis
-    font-style: italic
-  .gl // generic underline
-    text-decoration: underline
-  .go // generic output
-    color: $chroma-output
-  .gp // generic prompt
-    color: $chroma-prompt
-    font-weight: bold
-  .w // whitespace
-    color: $chroma-whitespace
-
-@media (prefers-color-scheme: dark)
-  body
-    background-color: $dark
-    color: $light
-
-  a:link, a:active, a:visited
-    color: $dark-accent
-
-  nav, footer, main
-    border:
-      top: 0.2em dashed $dark-accent
-
-  $chroma-bg: lighten($dark, 10%)
-  $chroma-highlight: #ffffcc
-  $chroma-keyword: $dark-accent
-  $chroma-type: #902000
-  $chroma-attribute: #4070a0
-  $chroma-class: #0e84b5
-  $chroma-constant: #60add5
-  $chroma-decorator: #555555
-  $chroma-entity: #d55537
-  $chroma-func: #ffeb38
-  $chroma-tag: $chroma-func
-  $chroma-variable: #bb60d5
-  $chroma-literal: #b2f5b8
-  $chroma-interpol: #70a0d0
-  $chroma-otherstring: #c65d09
-  $chroma-regex: #235388
-  $chroma-symbol: #517918
-  $chroma-operator: #cccccc
-  $chroma-comment: #b3ecff
-  $chroma-speccommentbg: #fff0f0
-  $chroma-inserted: #00a000
-  $chroma-deleted: #a00000
-  $chroma-error: #ff0000
-  $chroma-traceback: #0044dd
-  $chroma-heading: #000080
-  $chroma-output: #888888
-  $chroma-prompt: #c65d09
-  $chroma-whitespace: #bbbbbb
-  .chroma // syntax highlighting widget
-    background-color: $chroma-bg
-    .x // other
-    .err // error
-    .lntd // line table td
-      vertical-align: top
-      padding: 0
-      margin: 0
-      border: 0
-    .lntable // line table
-      border-spacing: 0
-      padding: 0
-      margin: 0
-      border: 0
-      width: auto
-      overflow: auto
-      display: block
-    .hl // line highlight
-      display: block
-      width: 100%
-      background-color: $chroma-highlight
-    .lnt, .ln // line numbers table
-      margin-right: 0.4em
-      padding: 0 0.4em 0 0.4em
-    .k, .kc, .kd, .kn, .kr, .nb, .nl, .ow // keyword, constant, declaration, namespace, reserved, builtin, label, operator word
-      color: $chroma-keyword
-      font-weight: bold
-    .kp, .bp, .ne, .cpf // keyword pseudo, builtin pseudo, name exception, preprocessor directive comment, preprocessor directive comment file
-      color: $chroma-keyword
-    .kt // keyword type
-      color: $chroma-type
-    .n // name
-    .na // attribute
-      color: $chroma-attribute
-    .nc, .nn // class, namespace
-      color: $chroma-class
-      font-weight: bold
-    .no // name constant
-      color: $chroma-constant
-    .nd // name decorator
-      color: $chroma-decorator
-      font-weight: bold
-    .ni // name entity
-      color: $chroma-entity
-      font-weight: bold
-    .nf // name function
-      color: $chroma-func
-    .fm // name function magic
-    .nx // name other
-    .py // name property
-    .nt // name tag
-      color: $chroma-tag
-      font-weight: bold
-    .nv // variable
-      color: $chroma-variable
-    .vc, .vg, .vi, .vm // variable class, global, instance, magic
-    .l, .ld, .p // literal, date, punctuation
-    .s, .sa, .sb, .sc, .dl, .s2, .sh, .s1, .m, .mb, .mf, .mh, .mi, .il, .mo // literal string, affix, backtick, char, delimiter, double, heredoc, single, number, binary number float, hex, integer, long, octal
-      color: $chroma-literal
-    .sd // string doc
-      color: $chroma-literal
-      font-style: italic
-    .se // string escape
-      color: $chroma-literal
-      font-weight: bold
-    .si // string interpolation
-      color: $chroma-interpol
-      font-style: italic
-    .sx // literal string other
-      color: $chroma-otherstring
-    .sr // literal regex
-      color: $chroma-regex
-    .ss // literal symbol
-      color: $chroma-symbol
-    .o // operator
-      color: $chroma-operator
-    .c, .ch, .cm, .c1 // comment, hashbang, multiline comment, single comment
-      color: $chroma-comment
-      font-style: italic
-    .cs // special comment
-      color: $chroma-comment
-      background-color: $chroma-speccommentbg
-    .g // generic
-    .gi // generic inserted
-      color: $chroma-inserted
-    .gd // generic deleted
-      color: $chroma-deleted
-    .gr // generic error
-      color: $chroma-error
-    .gt // generic traceback
-      color: $chroma-traceback
-    .gh // generic heading
-      color: $chroma-heading
-      font-weight: bold
-    .gu // generic subheading
-      color: $chroma-heading
-      font-weight: bold
-    .gs // generic strong
-      font-weight: bold
-    .ge // generic emphasis
-      font-style: italic
-    .gl // generic underline
-      text-decoration: underline
-    .go // generic output
-      color: $chroma-output
-    .gp // generic prompt
-      color: $chroma-prompt
-      font-weight: bold
-    .w // whitespace
-      color: $chroma-whitespace

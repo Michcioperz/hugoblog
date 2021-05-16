@@ -1,6 +1,7 @@
 +++
 title = "Adventures in SIO2: the many ways to add LaTeX to quizzes"
 date = "2019-07-23T17:21:10+0200"
+containsCode = true
 +++
 [SIO2](https://github.com/sio2project/oioioi) is Polish Olympiad in Informatics's automatic grader (the insider term, I hear, is "online judge") for competitive programming contests. If you wanna try it out, I recommend the Olympiad-run public instance for training, [Szkopuł](https://szkopul.edu.pl).
 

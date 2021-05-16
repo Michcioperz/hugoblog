@@ -1,6 +1,7 @@
 +++
 date = "2018-05-30"
 title = "So you wanna federate your anime list?"
+containsCode = true
 +++
 
 With [MyAnimeList](https://myanimelist.net) down for days now, I’ve been seeing people turn to other alternatives such as [Kitsu](https://kitsu.io) and [Anilist](https://anilist.co) a fair deal recently, and although I have long since done so, it is a new for at least three of my friends.
