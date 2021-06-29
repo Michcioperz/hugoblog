@@ -5,7 +5,7 @@ copyright = "Copyright © Michał Sidor"
 
 [outputs]
   page = ["HTML", "json"]
-  section = ["HTML", "json"]
+  section = ["HTML", "json", "RSS"]
 
 [mediaTypes]
   [mediaTypes."application/activity+json"]
