@@ -6,6 +6,7 @@ contentOnly = true
 Hi, my name is Michał Sidor, and I go by Michcioperz on the web.
 I am a programmer and a Computer Science MSc student at
 University of Warsaw. I use he/him and they/them pronouns.
+Currently I am a Software Engineering Intern at Sentry.io.
 
 I think the coolest thing about the web and computers is the way
 those technologies encourage people to express themselves
