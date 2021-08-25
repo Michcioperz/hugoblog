@@ -8,13 +8,6 @@ Michcioperz.** Jestem programistą i magistrantem z informatyki na
 Uniwersytecie Warszawskim. Obecnie pracuję jako Software Engineering
 Intern (praktykant inżynierii oprogramowania?) w Sentry.io.
 
-**Gdyby ktoś mnie spytał, co najbardziej cenię w informatyce,**
-powiedziałbym, że sposób, w jaki nowoczesne technologie pomagają ludziom
-wyrażać się kreatywnie poprzez sztukę, programowanie, ale też w innych
-dziedzinach. Dlatego za cel obrałem sobie swoją pracą pomagać innym
-robić fajne rzeczy i budować społeczności, dostarczając im narzędzi oraz
-infrastruktury do tych działań.
-
 **W mojej karierze programistycznej** głównie kręciłem się wokół
 programowania aplikacji webowych (w Pythonie) i administracji serwerami.
 Chociaż nie wyraża to bogatej palety zadań, których dostarczała mi

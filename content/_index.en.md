@@ -8,13 +8,6 @@ I am a programmer and a Computer Science MSc student at
 University of Warsaw. I use he/him and they/them pronouns.
 Currently I am a Software Engineering Intern at Sentry.io.
 
-**I think the coolest thing about the web and computers is** the way
-those technologies encourage people to express themselves
-creatively, whether through art, programming, or other
-disciplines. Stemming from this belief, I consider it my life
-goal to help people create cool things (but also communities), by
-providing them with infrastructure and tools.
-
 **Throughout my career** I've mostly been tinkering with web
 development (in Python) and server administration. While this
 description doesn't fully describe the work I've done for the
