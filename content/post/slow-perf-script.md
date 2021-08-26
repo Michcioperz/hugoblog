@@ -20,7 +20,7 @@ From this observation you might realize that there might be something different 
 
 And it's not like Debian maintainers don't know it. [They do know.](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911815#15) But because the Linux kernel is licensed GPL v2 only, while libbfd is licensed GPL v3+, there is no overlap between those licenses, and the resulting program is not distributable. Or at least that's the argument given by a Debian maintainer.
 
-Whether or not NixOS should do something about this is out of the scpoe of this post.
+Whether or not NixOS should do something about this is out of the scope of this post.
 
 ### Okay so how
 
