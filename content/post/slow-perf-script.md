@@ -1,6 +1,6 @@
 ---
 title: "Dealing with slow `perf script` on Debian"
-date: 2021-08-25T21:49:00+0200
+date: 2021-08-26T23:10:00+0200
 ---
 [Flamegraphs](https://www.brendangregg.com/flamegraphs.html) have become a pretty established way of visualizing performance of programs written in compiled languages. They give you a quick overview of how much time your program spends on certain subroutines. But preparing them is kind of an errand.
 
