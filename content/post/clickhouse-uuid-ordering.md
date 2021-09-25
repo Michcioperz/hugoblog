@@ -1,6 +1,6 @@
 ---
 title: "Falsehoods programmers believe about UUID ordering in ClickHouse"
-date: 2021-09-25T16:45:00+0200
+date: 2021-09-25T17:21:00+0200
 containsCode: true
 ---
 
