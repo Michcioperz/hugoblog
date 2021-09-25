@@ -1,6 +1,7 @@
 ---
 title: "Falsehoods programmers believe about UUID ordering in ClickHouse"
 date: 2021-09-25T16:45:00+0200
+containsCode: true
 ---
 
 This is another one of those posts where I accept that things just are the way they are, but write down things for others, so that the Google query "clickhouse uuid ordering" or "clickhouse uuid sorting" isn't completely devoid of relevant results.
@@ -93,3 +94,11 @@ But it's different! Hopefully this will never be useful to you, but if you or so
 Yeah, actually, if you look closely at the first result list, you should be able to spot the pattern. Which is, that you can split the digits of the UUID into two groups AAAAAAAA-AAAA-AAAA-BBBB-BBBBBBBBBBBB and then the data is ordered lexicographically by (B, A) tuple.
 
 And I guess it makes sense to some extent. The UUID type in ClickHouse is [typedef'd to a 128-bit unsigned integer](https://github.com/ClickHouse/ClickHouse/blob/066d02dd2fdcd82bfd1b3e78d1ecfd9bfdd5e7d8/src/Core/Types.h#L73). Most of the machines people run ClickHouse on are 64-bit, and I imagine there are some shenaningans in the part that converts between the string representation and the integer value that cause the two halves of the number to be swapped.
+
+#### How can this hurt me? How did you discover this?
+
+I was looking into a bug where the affected feature paginated through a query. It would fetch certain items ordered by a (timestamp, uuid) tuple in batches of 10 at a time, and then get another batch by filtering items which were larger in ordering. This will work fine if you use the same ordering in both ORDER BY and WHERE parts of your solution.
+
+In the affected application, stringified ordering was used. However, a query optimizer in the application saw `WHERE toString(uuid) < 'previous-best-uuid'`, and decided that stringification was unnecessary. It didn't touch the ORDER BY clause though. This caused the database to incorrectly filter rows, skipping some unprocessed rows as well as repeating some already processed rows.
+
+I guess the bigger lesson here is that when you paginate by a cursor, you have to be confident that filtering and ordering compare elements the same way. Which is not easy when you have a behaviour like what ClickHouse does here.
