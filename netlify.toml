@@ -10,7 +10,7 @@ status = 200
 [[redirects]]
 from = "http://michcioperz.com/*"
 to = "https://michcioperz.com/:splat"
-status = 302
+status = 301
 
 [[redirects]]
 from = "https://ijestfajnie.pl/*"
@@ -20,7 +20,7 @@ status = 200
 [[redirects]]
 from = "http://ijestfajnie.pl/*"
 to = "https://ijestfajnie.pl/:splat"
-status = 302
+status = 301
 
 [[redirects]]
 from = "https://www.michcioperz.com/*"
@@ -30,7 +30,7 @@ status = 200
 [[redirects]]
 from = "http://www.michcioperz.com/*"
 to = "https://michcioperz.com/:splat"
-status = 302
+status = 301
 
 [[redirects]]
 from = "https://www.ijestfajnie.pl/*"
@@ -40,4 +40,4 @@ status = 200
 [[redirects]]
 from = "http://www.ijestfajnie.pl/*"
 to = "https://ijestfajnie.pl/:splat"
-status = 302
+status = 301
