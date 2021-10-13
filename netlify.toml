@@ -1,0 +1,43 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[[redirects]]
+from = "https://michcioperz.com/*"
+to = "/en/:splat"
+status = 200
+
+[[redirects]]
+from = "http://michcioperz.com/*"
+to = "https://michcioperz.com/:splat"
+status = 302
+
+[[redirects]]
+from = "https://ijestfajnie.pl/*"
+to = "/pl/:splat"
+status = 200
+
+[[redirects]]
+from = "http://ijestfajnie.pl/*"
+to = "https://ijestfajnie.pl/:splat"
+status = 302
+
+[[redirects]]
+from = "https://www.michcioperz.com/*"
+to = "/en/:splat"
+status = 200
+
+[[redirects]]
+from = "http://www.michcioperz.com/*"
+to = "https://michcioperz.com/:splat"
+status = 302
+
+[[redirects]]
+from = "https://www.ijestfajnie.pl/*"
+to = "/pl/:splat"
+status = 200
+
+[[redirects]]
+from = "http://www.ijestfajnie.pl/*"
+to = "https://ijestfajnie.pl/:splat"
+status = 302
