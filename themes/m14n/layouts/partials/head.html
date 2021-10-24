@@ -4,10 +4,11 @@
 {{ hugo.Generator }}
 <title>{{ if .Title }}{{ .Title }} – {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ end }}" />
-<link rel="stylesheet" href="{{ (resources.Get "assets/style.sass" | resources.ExecuteAsTemplate "assets/style.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint).RelPermalink }}" />
-<link rel="stylesheet" href="{{ (resources.Get "assets/fonts.sass" | resources.ExecuteAsTemplate "assets/fonts.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint).RelPermalink }}" />
+{{ $styles := partialCached "styles.html" . -}}
+<link rel="stylesheet" href="{{ $styles.main.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $styles.font.RelPermalink }}" />
 {{ if (.Params.containsCode | default false) -}}
-<link rel="stylesheet" href="{{ (resources.Get "assets/code.sass" | resources.ExecuteAsTemplate "assets/code.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint).RelPermalink }}" />
+<link rel="stylesheet" href="{{ $styles.code.RelPermalink }}" />
 {{ end -}}
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}" />

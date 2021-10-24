@@ -1,0 +1,4 @@
+{{ $main := (resources.Get "assets/style.sass" | resources.ExecuteAsTemplate "assets/style.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint) -}}
+{{ $font := (resources.Get "assets/fonts.sass" | resources.ExecuteAsTemplate "assets/fonts.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint) -}}
+{{ $code := (resources.Get "assets/code.sass" | resources.ExecuteAsTemplate "assets/code.sass" . | resources.ToCSS (dict "enableSourceMap" true "outputStyle" "compressed") | resources.Fingerprint) -}}
+{{ return (dict "main" $main "font" $font "code" $code) -}}

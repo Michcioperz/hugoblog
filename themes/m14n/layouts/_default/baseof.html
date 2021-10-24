@@ -8,7 +8,7 @@
       {{- partial "language.html" . -}}
       {{- block "main" . }}{{- end }}
       </main>
-      {{- partial "footer.html" . -}}
+      {{- partialCached "footer.html" . -}}
     </div>
   </body>
 </html>
