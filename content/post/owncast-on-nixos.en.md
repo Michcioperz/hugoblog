@@ -3,6 +3,8 @@ title: "Owncast on NixOS"
 date: 2021-04-18
 ---
 
+**Update (2021-10-24):** Owncast is now packaged and configurable within NixOS unstable, and a new NixOS release is due in November. So this description is likely no longer useful. Not to mention that I don't use Owncast anymore.
+
 I really enjoy painful discovery of hidden dependencies, so I thought it would be fun to package Owncast for NixOS for my own nefarious purposes. I didn't have any experience with Owncast before, but what could possibly go wrong?
 
 A brief reminder of definitions:
