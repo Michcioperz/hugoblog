@@ -27,6 +27,6 @@ _[Read more of my blog posts](./post)_
 
 I'm open to interesting job offers, as long as "interesting"
 doesn't mean Django (which I've grown too tired of at this point)
-or blockchain or machine learning (which I am a hopeless disbeliefer in). Of
+or blockchain or machine learning (which I am a hopeless disbeliever in). Of
 course, work is not the only thing **I like to be talked to** about! _[See how
 best to contact me](./contact)_
