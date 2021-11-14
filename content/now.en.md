@@ -18,7 +18,7 @@ I live in moderately western Warsaw, Poland. I'm now triple vaxxed, so I'm open 
 
 I'm in the final year of Masters degree at U of Warsaw, doing Computer Science. My thesis paper has me contributing to a cycle-accurate emulator of an off-the-shelf microcontroller, which is kinda interesting.
 
-I'm looking for a job to start after I finish my degree. [Here's more about what I'm looking for](./careers)
+I'm looking for a job to start after I finish my degree. [Here's more about what I'm looking for]({{< ref "careers" >}})
 
 ### Chemistry
 
