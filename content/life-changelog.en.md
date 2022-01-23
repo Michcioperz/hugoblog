@@ -6,13 +6,15 @@ title = "Life changelog"
 
 ### Currently
 
-- being a Software Engineering Intern at [Sentry.io](https://sentry.io) throughout the Summer
 - studying Computer Science at [Faculty of Mathematics, Informatics and Mechanics](https://mimuw.edu.pl), [University of Warsaw](https://uw.edu.pl)
   - finished BSc as of July 2020, in the MSc programme since then
   - joined [ngSim](https://www.mimuw.edu.pl/~iwanicki/projects/ngSim/) research project, helping develop a cycle-accurate Cortex-M simulator in Rust
 
 ### Formerly
 
+- Software Engineering Intern at [Sentry.io](https://sentry.io)
+  - July – September 2021
+  - investigated and unclogged a big performance bottleneck in Relay
 - developed some backend for [Calmsie](https://calmsie.ai)
 - system administrator for **Foundation for Information Technology Development**
   - maintained the grading system of [Polish Olympiad in Informatics](https://oi.edu.pl)
