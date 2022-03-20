@@ -2,6 +2,8 @@
 title: "Dealing with slow `perf script` on Debian"
 date: 2021-08-26T23:10:00+0200
 ---
+(This post has an update pointing to another solution at the bottom.)
+
 [Flamegraphs](https://www.brendangregg.com/flamegraphs.html) have become a pretty established way of visualizing performance of programs written in compiled languages. They give you a quick overview of how much time your program spends on certain subroutines. But preparing them is kind of an errand.
 
 One of the possible sources of performance measurements for flamegraphs is the `perf` framework in Linux kernel. What you do is either wrap the run of your program in a `perf record` tool invocation, or you just tell the tool to attach to an existing process. Then you push the recorded data through the `perf script` command, which (according to my weak understanding) matches up symbols from executables and libraries with the addresses in the data. And finally there are some Perl scripts that generate the flamegraphs from that data.
@@ -32,10 +34,18 @@ I feel like the easier way is to just get the sources of perf and run `make`.
 
 To get source code of perf, you probably just want the kernel sources. On Debian, you can just run `apt source linux-perf-4.19` (where 4.19 is your kernel version), and you'll get a lot of auxilliary files and a directory with kernel sources. Or you can just download a tarball from kernel.org and get the same directory. Perf is located in `tools/perf` subdirectory.
 
-To get the speedup from not shelling out to `addr2line` all the time, you need to install libbfd, and more importantly, it's development headers. On Debian, it's probably `sudo apt-get install libbfd-dev` that you want.
+To get the speedup from not shelling out to `addr2line` all the time, you need to install libbfd, and more importantly, it's development headers. On Debian, it's probably `sudo apt-get install binutils-dev` that you want.
 
-Once you have libbfd, run something like `make prefix=$HOME/.local install`. Yes, the word prefix is lowercase. `$HOME/.local` is just something that I consider to be a roughly good choice for where to install, because it's probably in your `$PATH` already on Debian. The make process will print a colorful table of which features are enabled and which aren't, and you want to make sure that bfd is green.
+Once you have libbfd, run something like `make prefix=$HOME/.local VERSION=4.19 install-bin`. Yes, the word prefix is lowercase. `$HOME/.local` is just something that I consider to be a roughly good choice for where to install, because it's probably in your `$PATH` already on Debian. The make process will print a colorful table of which features are enabled and which aren't, and you want to make sure that bfd is green.
 
-You will end up with the binary installed to `$prefix/bin/perf_`, presumably because we missed an environment variable somewhere. Just symlink it to either `perf` (if you're using that name in your scripts) or `perf_4.19` or such (if you're using (`cargo-`)`flamegraph`, cause it's gonna look for one with your kernel version in name) in your path.
+If you don't specify your kernel version in the `make` run, you will end up with the binary installed to `$prefix/bin/perf_`. You can just symlink it to either `perf` (if you're using that name in your scripts) or `perf_4.19` or such (if you're using (`cargo-`)`flamegraph`, cause it's gonna look for one with your kernel version in name) in your path.
 
 And that should be it really. Have fun being more productive! I know I will.
+
+### Update (2022-03-20)
+
+Two weeks after this post was written, [Tony Garnock-Jones wrote a very nice patch](https://eighty-twenty.org/2021/09/09/perf-addr2line-speed-improvement) which uses a long-running `addr2line`, and from what I understand, it is now merged into mainline. Sadly, it has yet to help people who live on distros that aren't Arch. Still, thank you Tony for your contribution (and for a chain of events that briefly put my legal name in a top comment on a top post on the orange site).
+
+Another six weeks later, Dr. Koutheir Attouchi emailed me with a few suggestions (`libbfd-dev` → `binutils-dev`, `make install` → `make install-bin` to skip installing documentation, and a `VERSION` variable for `make`). I'm sorry I took so long to include those, and thank you for your email.
+
+And final thanks go to Bob, whose email prompted me to make this update.
