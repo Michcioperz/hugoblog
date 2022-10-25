@@ -1,7 +1,7 @@
 title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
-copyright = "Copyright © Michał Sidor"
+copyright = "Copyright © Michalina Sidor"
 
 [outputs]
   page = ["HTML", "json"]
@@ -22,7 +22,7 @@ copyright = "Copyright © Michał Sidor"
   dateFormat = "2006-01-02"
 
 [author]
-  name = "Michał Sidor"
+  name = "Michalina Sidor"
 
 [languages]
   [languages.en]
@@ -30,11 +30,11 @@ copyright = "Copyright © Michał Sidor"
     baseURL = "https://michcioperz.com"
     weight = 1
     [languages.en.params]
-      description = "The website and the blog of Michał Sidor, a programmer"
+      description = "The website and the blog of Michalina Sidor, a programmer"
   [languages.pl]
     languageName = "polski"
     baseURL = "https://ijestfajnie.pl"
     weight = 2
     [languages.pl.params]
-      description = "Strona i blog programisty Michała Sidora"
+      description = "Strona i blog programistki Michaliny Sidor"
 

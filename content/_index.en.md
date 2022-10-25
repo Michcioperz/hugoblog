@@ -3,9 +3,9 @@ title = "Home"
 contentOnly = true
 +++
 
-**Hi, my name is Michał Sidor, and I go by Michcioperz on the web.**
+**Hi, my name is Michalina Sidor, and I go by Michcioperz on the web.**
 I am a programmer and a Computer Science MSc student at
-University of Warsaw. I use he/him and they/them pronouns.
+University of Warsaw. I use she/her pronouns.
 
 **Throughout my career** I've mostly been tinkering with web
 development (in Python) and server administration. While this
@@ -20,8 +20,4 @@ one of the most interesting pieces I've managed to churn out is
 [My nuclear take on modular phone design](./post/modular-phones).
 _[Read more of my blog posts](./post)_
 
-I'm open to interesting job offers, as long as "interesting"
-doesn't mean Django (which I've grown too tired of at this point)
-or blockchain or machine learning (which I am a hopeless disbeliever in). Of
-course, work is not the only thing **I like to talk** about! _[See how
-best to contact me](./contact)_
+**Talk to me** if you want, but preferably **not** about blockchain or machine learning. _[See how to contact me](./contact)_

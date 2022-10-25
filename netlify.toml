@@ -2,6 +2,9 @@
 publish = "public"
 command = "hugo --gc --minify --enableGitInfo"
 
+[build.environment]
+HUGO_VERSION = "0.99.1"
+
 [[redirects]]
 from = "https://michcioperz.com/*"
 to = "/en/:splat"
@@ -14,8 +17,8 @@ status = 301
 
 [[redirects]]
 from = "https://ijestfajnie.pl/*"
-to = "/pl/:splat"
-status = 200
+to = "https://michcioperz.com/:splat"
+status = 302
 
 [[redirects]]
 from = "http://ijestfajnie.pl/*"
@@ -24,8 +27,8 @@ status = 301
 
 [[redirects]]
 from = "https://www.michcioperz.com/*"
-to = "/en/:splat"
-status = 200
+to = "https://michcioperz.com/:splat"
+status = 301
 
 [[redirects]]
 from = "http://www.michcioperz.com/*"
@@ -34,8 +37,8 @@ status = 301
 
 [[redirects]]
 from = "https://www.ijestfajnie.pl/*"
-to = "/pl/:splat"
-status = 200
+to = "https://ijestfajnie.pl/:splat"
+status = 301
 
 [[redirects]]
 from = "http://www.ijestfajnie.pl/*"
