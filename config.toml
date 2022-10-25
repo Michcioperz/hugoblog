@@ -2,6 +2,7 @@ title = "Michcioperz"
 theme = "m14n"
 enableRobotsTxt = true
 copyright = "Copyright © Michalina Sidor"
+disableLanguages = ["pl"]
 
 [outputs]
   page = ["HTML", "json"]
